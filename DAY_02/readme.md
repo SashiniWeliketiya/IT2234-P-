@@ -5,3 +5,6 @@
 |['practical_03.js'](./codes/practical_03.js)|![practical03.png](./Output/practical03.png)|
 |['practical_04.js'](./codes/practical_04.js)|![practical04.png](./Output/practical04.png)|
 |['practical_05.js'](./codes/practical_05.js)|![practical05.png](./Output/practical05.png)|
+|['practical_06.js'](./codes/practical_06.js)|![practical06.png](./Output/practical06.png)|
+|['json.js'](./codes/json.js)|![json.png](./Output/json.png)|
+|['question.js'](./codes/question.js)|![question.png](./Output/question.png)|
