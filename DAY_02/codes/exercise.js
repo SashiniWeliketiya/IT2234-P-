@@ -30,13 +30,7 @@ arr.forEach((n) => {
 	})
 })
 
-//[4,8,3,4,3,2,1,8,4]
-//find the most frequent element in the Array
-let arr1 = [4,8,3,4,3,2,1,8,4]
-let count=0;
-arr1.forEach((n) => {
-	
-})
+
 
 
 
