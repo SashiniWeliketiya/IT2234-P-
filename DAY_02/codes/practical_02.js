@@ -28,7 +28,7 @@ array1.forEach((m)=>{
 )
 
 
-array1.forEach((m) => {
+array1.forEach((m) => {+
 	m.forEach((i) =>{
 		console.log(i)
 	})
