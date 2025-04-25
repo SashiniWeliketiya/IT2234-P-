@@ -24,3 +24,27 @@
 📝 Fill out the fields 
 
 ✅ Hit “Insert” 
+
+## 🖥️ 2. Using a Database in MongoDB Shell (mongosh)
+
+![01_2](https://github.com/user-attachments/assets/b385a71a-6641-4ba2-9610-f9be8e354ffd)
+
+✅ Step 1: Start the MongoDB Shell
+✅ Step 2: Switch to (or Create) a Database
+
+use unidb
+📁 This switches to the unidb.
+🆕 If it doesn’t exist, MongoDB will create it.
+
+✅ Step 3: Insert Some Data (to create the DB)
+📌 This creates the users collection and inserts one document.
+🎉 Now your database is officially created!
+
+✅ Step 4: Show the Current Database
+🔍 This shows the name of the database you're currently using.
+
+✅ Step 5: View All Databases
+
+📚 Lists all databases that contain at least one collection with data.
+
+✅ Step 6: View Collections in Current DB
