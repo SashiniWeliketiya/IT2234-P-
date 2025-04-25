@@ -21,6 +21,6 @@
 
 ➕ Click on “Insert Document”
 
-📝 Fill out the fields using the friendly UI
+📝 Fill out the fields 
 
-✅ Hit “Insert” and you're done!
+✅ Hit “Insert” 
