@@ -11,6 +11,7 @@
 
 ✅ Hit "Create Database"
 
+
 **🖥️ 2. Insert Data into collection**
 
 ![02_insert](https://github.com/user-attachments/assets/83013938-8dfc-46a0-9e1b-5493218c6fab)
