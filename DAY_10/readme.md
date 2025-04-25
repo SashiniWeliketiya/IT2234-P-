@@ -25,7 +25,7 @@
 
 ✅ Hit “Insert” 
 
-## 🖥️ 2. Using a Database in MongoDB Shell (mongosh)
+## 🖥️ 3. Using a Database in MongoDB Shell (mongosh)
 
 ![01_2](https://github.com/user-attachments/assets/b385a71a-6641-4ba2-9610-f9be8e354ffd)
 
@@ -34,7 +34,9 @@
 ✅ Step 2: Switch to (or Create) a Database
 
 use unidb
+
 📁 This switches to the unidb.
+
 🆕 If it doesn’t exist, MongoDB will create it.
 
 ✅ Step 3: Insert Some Data (to create the DB)
