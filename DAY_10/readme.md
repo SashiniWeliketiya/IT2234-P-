@@ -1,5 +1,5 @@
 
-**💻 1. Create Database & using compass**
+## 💻 1. Create Database & using compass
 
 ![01_createdb](https://github.com/user-attachments/assets/c46277ea-77ed-47a8-a7f0-cfbc8c415a56)
 
@@ -12,7 +12,7 @@
 ✅ Hit "Create Database"
 
 
-**🖥️ 2. Insert Data into collection**
+## 🖥️ 2. Insert Data into collection
 
 ![02_insert](https://github.com/user-attachments/assets/83013938-8dfc-46a0-9e1b-5493218c6fab)
 
