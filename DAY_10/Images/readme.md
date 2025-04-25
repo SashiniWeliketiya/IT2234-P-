@@ -1,4 +1,4 @@
-💻💚 01. Using MongoDB Compass (GUI Tool)
+💻 01. Using MongoDB Compass (GUI Tool)
 
 ![01_createdb](https://github.com/user-attachments/assets/c46277ea-77ed-47a8-a7f0-cfbc8c415a56)
 
