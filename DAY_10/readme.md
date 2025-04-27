@@ -218,6 +218,9 @@ db.students.find({"gender": "Male"})
 ~~~
 db.students.find({"degree": "IT","gender": "Female",}).sort({"age":1})
 ~~~
+
+📌Shell Response
+
 ~~~
 {
   _id: ObjectId('680baeacf922b1a220180400'),
@@ -258,6 +261,47 @@ db.students.find({"degree": "IT","gender": "Female",}).sort({"age":1})
     'JS',
     'MongoDB',
     'Node'
+  ],
+  gender: 'Female'
+}
+~~~
+
+## 🖥️ Greater Than -> $gt
+
+![gt](https://github.com/user-attachments/assets/c28ad5f7-27f9-446c-9f47-43ae2227503b)
+
+~~~
+db.students.find({"age": {"$gt":24}})
+~~~
+
+📌Shell Response
+
+~~~
+{
+  _id: ObjectId('680bab7ff922b1a2201803ff'),
+  regno: '2021ICT001',
+  name: 'Sashi',
+  age: 25,
+  gpa: 3.1,
+  degree: 'IT',
+  skills: [
+    'JS',
+    'MongoDB',
+    'Node'
+  ],
+  gender: 'Female'
+}
+{
+  _id: ObjectId('680baeeaf922b1a220180401'),
+  regno: '2021ICT003',
+  name: 'Nipu',
+  age: 25,
+  gpa: 3.3,
+  degree: 'MATHS',
+  skills: [
+    'JS',
+    'CSS',
+    'Python'
   ],
   gender: 'Female'
 }
