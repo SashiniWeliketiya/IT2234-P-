@@ -82,6 +82,15 @@ Once you're done editing, click the "Replace" button.
 ![03_update](https://github.com/user-attachments/assets/375406a7-0afc-4801-856d-3ea022c3e5a7)
 
 
+## 🖥️ 4. Insert Documents Using MongoDB Shell
+
+✅ InsertedOne Document
+
+![insertedone](https://github.com/user-attachments/assets/a7b1dee0-5c9e-47ab-acb9-a7fcb6b4844e)
+
+✅ InsertedMany Document
+
+![insertedmany](https://github.com/user-attachments/assets/0ede459b-e052-4331-8244-7892f27d8c49)
 
 
 
@@ -89,6 +98,5 @@ Once you're done editing, click the "Replace" button.
 
 
 
-Get smarter responses, upload files and images, and more.
 
 
