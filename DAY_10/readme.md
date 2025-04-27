@@ -82,11 +82,64 @@ Once you're done editing, click the "Replace" button.
 ![03_update](https://github.com/user-attachments/assets/375406a7-0afc-4801-856d-3ea022c3e5a7)
 
 
-## 🖥️ 4. Insert Documents Using MongoDB Shell
+## 🖥️ 5. Insert Documents Using MongoDB Shell
+
+📌 Insert One Document
+
+db.students.insertOne(
+  {
+  "regno": "2021ICT005",
+  "name": "Smith",
+  "age": 22,
+  "gpa": 3.0,
+  "degree": "IT",
+  "skills": [
+    "Java",
+    "MongoDB",
+    "CSS"
+  ],
+  "gender": "Male"
+  })
 
 ✅ InsertedOne Document
 
+![insertone](https://github.com/user-attachments/assets/2a87968b-9524-432e-a6a4-88280d484a61)
+
 ![insertedone](https://github.com/user-attachments/assets/a7b1dee0-5c9e-47ab-acb9-a7fcb6b4844e)
+
+
+📌Insert Many Documents
+
+db.students.insertMany(
+  [
+  {
+  "regno": "2021ICT006",
+  "name": "Ridmi",
+  "age": 24,
+  "gpa": 3.4,
+  "degree": "IT",
+  "skills": [
+    "Java",
+    "MongoDB",
+    "C++"
+  ],
+  "gender": "Female"
+  },
+  
+  {
+  "regno": "2021ICT007",
+  "name": "Samo",
+  "age": 21,
+  "gpa": 3.4,
+  "degree": "MATHS",
+  "skills": [
+    "Java",
+    "MongoDB",
+    "Node"
+  ],
+  "gender": "Female"
+  }
+  ])
 
 ✅ InsertedMany Document
 
