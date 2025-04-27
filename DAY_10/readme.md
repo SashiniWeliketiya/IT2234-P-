@@ -144,6 +144,16 @@ db.students.insertMany(
   ])
 ~~~
 
+📌Shell Response
+~~~
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('680dca729a81d9183ac27329'),
+    '1': ObjectId('680dca729a81d9183ac2732a')
+  }
+~~~
+
 ✅ InsertedMany Document
 
 ![insertedmany](https://github.com/user-attachments/assets/0ede459b-e052-4331-8244-7892f27d8c49)
