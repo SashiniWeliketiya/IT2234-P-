@@ -361,3 +361,127 @@ db.students.find({"age": {"$lt":24}})
   gender: 'Female'
 }
 ~~~
+
+## 🖥️ Equal -> $eq
+
+![eq](https://github.com/user-attachments/assets/881eeeba-07b2-47ed-ac45-a8c87b3b425e)
+
+~~~
+db.students.find({"age": {"$eq":24}})
+~~~
+
+📌Shell Response
+
+~~~
+{
+  _id: ObjectId('680baeacf922b1a220180400'),
+  regno: '2021ICT002',
+  name: 'Yeni',
+  age: 24,
+  gpa: 3.6,
+  degree: 'IT',
+  skills: [
+    'JS',
+    'MongoDB',
+    'SQL'
+  ],
+  gender: 'Female'
+}
+{
+  _id: ObjectId('680dca729a81d9183ac27329'),
+  regno: '2021ICT006',
+  name: 'Ridmi',
+  age: 24,
+  gpa: 3.4,
+  degree: 'IT',
+  skills: [
+    'Java',
+    'MongoDB',
+    'C++'
+  ],
+  gender: 'Female'
+}
+~~~
+
+## 🖥️ Not Equal -> $ne
+
+![ne](https://github.com/user-attachments/assets/ab549424-c6b4-4d82-8ac3-6ec88151571e)
+
+~~~
+db.students.find({"age": {"$ne":25}})
+~~~
+
+📌Shell Response
+
+~~~
+{
+  _id: ObjectId('680baeacf922b1a220180400'),
+  regno: '2021ICT002',
+  name: 'Yeni',
+  age: 24,
+  gpa: 3.6,
+  degree: 'IT',
+  skills: [
+    'JS',
+    'MongoDB',
+    'SQL'
+  ],
+  gender: 'Female'
+}
+{
+  _id: ObjectId('680baf33f922b1a220180402'),
+  regno: '2021ICT004',
+  name: 'Nushi',
+  age: 23,
+  gpa: 3.3,
+  degree: 'MATHS',
+  skills: [
+    'Java',
+    'MongoDB',
+    'Python'
+  ],
+  gender: 'Female'
+}
+{
+  _id: ObjectId('680dc8079a81d9183ac27328'),
+  regno: '2021ICT005',
+  name: 'Smith',
+  age: 22,
+  gpa: 3,
+  degree: 'IT',
+  skills: [
+    'Java',
+    'MongoDB',
+    'CSS'
+  ],
+  gender: 'Male'
+}
+{
+  _id: ObjectId('680dca729a81d9183ac27329'),
+  regno: '2021ICT006',
+  name: 'Ridmi',
+  age: 24,
+  gpa: 3.4,
+  degree: 'IT',
+  skills: [
+    'Java',
+    'MongoDB',
+    'C++'
+  ],
+  gender: 'Female'
+}
+{
+  _id: ObjectId('680dca729a81d9183ac27329'),
+  regno: '2021ICT006',
+  name: 'Ridmi',
+  age: 24,
+  gpa: 3.4,
+  degree: 'IT',
+  skills: [
+    'Java',
+    'MongoDB',
+    'C++'
+  ],
+  gender: 'Female'
+}
+~~~
