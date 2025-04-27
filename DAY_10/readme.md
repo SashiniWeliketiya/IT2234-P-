@@ -85,7 +85,7 @@ Once you're done editing, click the "Replace" button.
 ## 🖥️ 5. Insert Documents Using MongoDB Shell
 
 📌 Insert One Document
-
+~~~
 db.students.insertOne(
   {
   "regno": "2021ICT005",
@@ -100,6 +100,7 @@ db.students.insertOne(
   ],
   "gender": "Male"
   })
+~~~
 
 ✅ InsertedOne Document
 
@@ -110,6 +111,7 @@ db.students.insertOne(
 
 📌Insert Many Documents
 
+~~~
 db.students.insertMany(
   [
   {
@@ -140,6 +142,7 @@ db.students.insertMany(
   "gender": "Female"
   }
   ])
+~~~
 
 ✅ InsertedMany Document
 
