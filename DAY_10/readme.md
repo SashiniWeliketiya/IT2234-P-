@@ -63,3 +63,31 @@ use unidb
 📚 Lists all databases that contain at least one collection with data.
 
 ✅ Step 6: View Collections in Current DB
+
+## 🖥️ 3. Edit Documents Using Compass
+
+✅ Step 1: Click the "Edit" Button
+
+On the right side of the document, you’ll see a little ✏️ edit icon — click it!
+
+Now you're in Edit Mode 🎯✨
+
+✅ Step 2: Make Your Changes
+
+✅ Step 3: Save Your Edits
+
+Once you're done editing, click the "Update" button.
+
+![03_update](https://github.com/user-attachments/assets/375406a7-0afc-4801-856d-3ea022c3e5a7)
+
+
+
+
+
+
+
+
+
+Get smarter responses, upload files and images, and more.
+
+
