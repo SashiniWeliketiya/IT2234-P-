@@ -1,5 +1,5 @@
 
-## 💻 1. Create Database & using compass
+## 💻 Create Database & using compass
 
 ![01_createdb](https://github.com/user-attachments/assets/c46277ea-77ed-47a8-a7f0-cfbc8c415a56)
 
@@ -12,7 +12,7 @@
 ✅ Hit "Create Database"
 
 
-## 🖥️ 2. Insert Data into collection
+## 🖥️ Insert Data into collection
 
 ![02_insert](https://github.com/user-attachments/assets/83013938-8dfc-46a0-9e1b-5493218c6fab)
 
@@ -34,7 +34,7 @@
 ![03](https://github.com/user-attachments/assets/7c737929-3fbc-42e4-bcfd-8bb45d5eef5f)
 
 
-## 🖥️ 3. Using a Database in MongoDB Shell (mongosh)
+## 🖥️ Using a Database in MongoDB Shell (mongosh)
 
 ![01_2](https://github.com/user-attachments/assets/b385a71a-6641-4ba2-9610-f9be8e354ffd)
 
@@ -65,7 +65,7 @@ use unidb
 ✅ Step 6: View Collections in Current DB
 
 
-## 🖥️ 4. Edit Documents Using Compass
+## 🖥️ Edit Documents Using Compass
 
 ✅ Step 1: Click the "Edit" Button
 
@@ -82,7 +82,7 @@ Once you're done editing, click the "Replace" button.
 ![03_update](https://github.com/user-attachments/assets/375406a7-0afc-4801-856d-3ea022c3e5a7)
 
 
-## 🖥️ 5. Insert Documents Using MongoDB Shell
+## 🖥️ Insert Documents Using MongoDB Shell
 
 📌 Insert One Document
 ~~~
@@ -166,7 +166,7 @@ db.students.insertMany(
 
 ![insertedmany](https://github.com/user-attachments/assets/0ede459b-e052-4331-8244-7892f27d8c49)
 
-## 🖥️ 6.Query Operators
+## 🖥️ Query Operators
 
 * find()
 * project
@@ -178,11 +178,11 @@ db.students.insertMany(
 * $in -> matches any in array
 * $nin -> doesn't matches any in array
 
-## 🖥️ 7.Find Data Using Compass
+## 🖥️ Find Data Using Compass
 
 ![find_compass](https://github.com/user-attachments/assets/81b2b84d-1f1f-4916-8b27-2a2058e6f302)
 
-## 🖥️ 8.Find Data Using MongoDB Shell
+## 🖥️ Find Data Using MongoDB Shell
 ~~~
 db.students.find({"gender": "Male"})
 ~~~
@@ -206,11 +206,11 @@ db.students.find({"gender": "Male"})
 }
 ~~~
 
-## 🖥️ 9. Projecting Data Using Compass
+## 🖥️  Projecting Data Using Compass
 
 ![project](https://github.com/user-attachments/assets/0dc2c4c7-97ac-437d-b90e-2ce398714bc5)
 
-## 🖥️ 10. Sorting Data Using Compass
+## 🖥️  Sorting Data Using Compass
 
 ![sort](https://github.com/user-attachments/assets/c735f994-e151-48e5-a088-a0aba2786e10)
 
