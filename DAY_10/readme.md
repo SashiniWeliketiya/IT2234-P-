@@ -76,7 +76,7 @@ Now you're in Edit Mode 🎯✨
 
 ✅ Step 3: Save Your Edits
 
-Once you're done editing, click the "Update" button.
+Once you're done editing, click the "Replace" button.
 
 ![03_update](https://github.com/user-attachments/assets/375406a7-0afc-4801-856d-3ea022c3e5a7)
 
