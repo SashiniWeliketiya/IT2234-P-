@@ -42,9 +42,11 @@ use unidb
 ✅ Step 3: Insert Some Data (to create the DB)
 
 📌 This creates the users collection and inserts one document.
+
 🎉 Now your database is officially created!
 
 ✅ Step 4: Show the Current Database
+
 🔍 This shows the name of the database you're currently using.
 
 ✅ Step 5: View All Databases
