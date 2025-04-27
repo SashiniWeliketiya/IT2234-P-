@@ -307,4 +307,57 @@ db.students.find({"age": {"$gt":24}})
 }
 ~~~
 
+## 🖥️ Less Than -> $lt
 
+![lt](https://github.com/user-attachments/assets/a2c0aff4-7ec5-4ba5-90ec-097004bcb3c9)
+
+~~~
+db.students.find({"age": {"$lt":24}})
+~~~
+
+📌Shell Response
+
+~~~
+{
+  _id: ObjectId('680baf33f922b1a220180402'),
+  regno: '2021ICT004',
+  name: 'Nushi',
+  age: 23,
+  gpa: 3.3,
+  degree: 'MATHS',
+  skills: [
+    'Java',
+    'MongoDB',
+    'Python'
+  ],
+  gender: 'Female'
+}
+
+  _id: ObjectId('680dc8079a81d9183ac27328'),
+  regno: '2021ICT005',
+  name: 'Smith',
+  age: 22,
+  gpa: 3,
+  degree: 'IT',
+  skills: [
+    'Java',
+    'MongoDB',
+    'CSS'
+  ],
+  gender: 'Male'
+}
+{
+  _id: ObjectId('680dca729a81d9183ac2732a'),
+  regno: '2021ICT007',
+  name: 'Samo',
+  age: 21,
+  gpa: 3.4,
+  degree: 'MATHS',
+  skills: [
+    'Java',
+    'MongoDB',
+    'Node'
+  ],
+  gender: 'Female'
+}
+~~~
