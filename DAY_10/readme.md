@@ -25,6 +25,15 @@
 
 ✅ Hit “Insert” 
 
+✅ Use "Format" button to make the document permitted.
+
+![02_format](https://github.com/user-attachments/assets/a527a95a-f622-4e8c-969d-d9bc0d99114e)
+
+✅ Inserted Document
+
+![03](https://github.com/user-attachments/assets/7c737929-3fbc-42e4-bcfd-8bb45d5eef5f)
+
+
 ## 🖥️ 3. Using a Database in MongoDB Shell (mongosh)
 
 ![01_2](https://github.com/user-attachments/assets/b385a71a-6641-4ba2-9610-f9be8e354ffd)
