@@ -205,3 +205,7 @@ db.students.find({"gender": "Male"})
   gender: 'Female'
 }
 ~~~
+
+## 🖥️ 9. Projecting Data Using Compass
+
+![project](https://github.com/user-attachments/assets/0dc2c4c7-97ac-437d-b90e-2ce398714bc5)
