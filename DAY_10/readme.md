@@ -101,6 +101,13 @@ db.students.insertOne(
   "gender": "Male"
   })
 ~~~
+📌Shell Response
+~~~
+{
+  acknowledged: true,
+  insertedId: ObjectId('680dc8079a81d9183ac27328')
+}
+~~~
 
 ✅ InsertedOne Document
 
