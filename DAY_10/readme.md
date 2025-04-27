@@ -177,6 +177,10 @@ db.students.insertMany(
 * $in -> matches any in array
 * $nin -> doesn't matches any in array
 
+## 🖥️ 7.Find data using Compass
+
+![find_compass](https://github.com/user-attachments/assets/81b2b84d-1f1f-4916-8b27-2a2058e6f302)
+
 
 
 
