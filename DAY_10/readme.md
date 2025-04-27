@@ -65,7 +65,7 @@ use unidb
 ✅ Step 6: View Collections in Current DB
 
 
-## 🖥️ 3. Edit Documents Using Compass
+## 🖥️ 4. Edit Documents Using Compass
 
 ✅ Step 1: Click the "Edit" Button
 
