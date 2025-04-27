@@ -165,7 +165,17 @@ db.students.insertMany(
 
 ![insertedmany](https://github.com/user-attachments/assets/0ede459b-e052-4331-8244-7892f27d8c49)
 
+## 🖥️ 6.Query Operators
 
+* find()
+* project
+* sort
+* $gt -> greater than
+* $lt -> less than
+* $eq -> equal
+* $ne -> not equal
+* $in -> matches any in array
+* $nin -> doesn't matches any in array
 
 
 
