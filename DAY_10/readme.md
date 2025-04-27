@@ -214,4 +214,53 @@ db.students.find({"gender": "Male"})
 
 ![sort](https://github.com/user-attachments/assets/c735f994-e151-48e5-a088-a0aba2786e10)
 
+## 🖥️  Sorting Data Using MongoDB Shell
+~~~
+db.students.find({"degree": "IT","gender": "Female",}).sort({"age":1})
+~~~
+~~~
+{
+  _id: ObjectId('680baeacf922b1a220180400'),
+  regno: '2021ICT002',
+  name: 'Yeni',
+  age: 24,
+  gpa: 3.6,
+  degree: 'IT',
+  skills: [
+    'JS',
+    'MongoDB',
+    'SQL'
+  ],
+  gender: 'Female'
+}
+{
+  _id: ObjectId('680dca729a81d9183ac27329'),
+  regno: '2021ICT006',
+  name: 'Ridmi',
+  age: 24,
+  gpa: 3.4,
+  degree: 'IT',
+  skills: [
+    'Java',
+    'MongoDB',
+    'C++'
+  ],
+  gender: 'Female'
+}
+{
+  _id: ObjectId('680bab7ff922b1a2201803ff'),
+  regno: '2021ICT001',
+  name: 'Sashi',
+  age: 25,
+  gpa: 3.1,
+  degree: 'IT',
+  skills: [
+    'JS',
+    'MongoDB',
+    'Node'
+  ],
+  gender: 'Female'
+}
+~~~
+
 
