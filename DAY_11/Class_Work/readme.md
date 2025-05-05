@@ -73,3 +73,12 @@ db.degrees.findOne({_id:ObjectId('6818c5f810694888a7d03768')})
 
 ![10](https://github.com/user-attachments/assets/ce5a613b-cf5b-4caa-88ff-d4303f255890)
 
+🛠️ 9.Increment Duration by 1 Year for Long Degrees
+
+ ~~~
+ db.degrees.updateMany({duration:{$gte:4}},{$inc:{duration:1}})
+ ~~~
+
+![11_1](https://github.com/user-attachments/assets/86c23918-cc0d-46fc-9b4f-9433d057e13e)
+![11_2](https://github.com/user-attachments/assets/51906538-bdf8-4493-8559-1b076e382d6e)
+
