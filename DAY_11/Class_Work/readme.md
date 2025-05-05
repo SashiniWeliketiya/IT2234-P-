@@ -82,3 +82,11 @@ db.degrees.findOne({_id:ObjectId('6818c5f810694888a7d03768')})
 ![11_1](https://github.com/user-attachments/assets/86c23918-cc0d-46fc-9b4f-9433d057e13e)
 ![11_2](https://github.com/user-attachments/assets/51906538-bdf8-4493-8559-1b076e382d6e)
 
+
+📋 10.Show All Degrees
+
+~~~
+db.degrees.find()
+~~~
+
+![12](https://github.com/user-attachments/assets/08e9cdd8-15f8-4154-9907-67e598775b48)
