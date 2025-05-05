@@ -36,3 +36,14 @@ db.degrees.find({},{name:1,_id:0}).pretty()
 ![6_2](https://github.com/user-attachments/assets/71eaa70a-4ec0-438a-a4c4-f9f58564fb9f)
 ![image](https://github.com/user-attachments/assets/7cb6c4af-5e8f-4248-b986-6d93cb1677b0)
 
+
+🗑️ Delete Degrees with Duration < 4
+
+~~~
+db.degrees.deleteMany({duration:{$lt:4}})
+~~~
+
+![7_1](https://github.com/user-attachments/assets/805edc87-3bb3-4d09-8aa3-808e4592630e)
+![7_2](https://github.com/user-attachments/assets/42ea57c1-0ae9-4fff-bc1d-33c0ea79a4b2)
+
+
