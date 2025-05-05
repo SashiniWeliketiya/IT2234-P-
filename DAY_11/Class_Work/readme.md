@@ -23,3 +23,11 @@ db.degrees.deleteOne({_id:ObjectId('6818c59a10694888a7d03766')})
 ![5_1](https://github.com/user-attachments/assets/cffd1ab5-b3ac-42b3-9868-a9d92aaaf2c4)
 ![5_2](https://github.com/user-attachments/assets/716eb3b2-fcc7-4bd8-8e51-d543a6e791af)
 
+
+👀 Display Degree Name & Duration
+
+~~~
+db.degrees.find().projection([{'name':1,'_id':1}])
+db.degrees.find().projection(['name','duration'])
+~~~
+
