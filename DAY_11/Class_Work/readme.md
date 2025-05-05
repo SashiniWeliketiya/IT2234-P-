@@ -31,3 +31,5 @@ db.degrees.find().projection([{'name':1,'_id':1}])
 db.degrees.find().projection(['name','duration'])
 ~~~
 
+![6_1](https://github.com/user-attachments/assets/a99e0b7d-4e25-4fc6-883b-3c337ef437a8)
+![6_2](https://github.com/user-attachments/assets/71eaa70a-4ec0-438a-a4c4-f9f58564fb9f)
