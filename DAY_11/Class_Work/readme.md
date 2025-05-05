@@ -90,3 +90,13 @@ db.degrees.find()
 ~~~
 
 ![12](https://github.com/user-attachments/assets/08e9cdd8-15f8-4154-9907-67e598775b48)
+
+
+🛠️ 11.Add a New Skill to a Student
+
+~~~
+db.students.updateOne({regno:'2021ICT001'},{$push:{skills:'PHP'}})
+db.students.findOne({regno:'2021ICT001'})
+~~~
+
+![13](https://github.com/user-attachments/assets/c61203d4-db3c-4680-9acf-95520862227b)
