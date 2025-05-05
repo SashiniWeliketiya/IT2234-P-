@@ -56,3 +56,13 @@ db.books.insertMany([{
 ~~~
 
 ![2](https://github.com/user-attachments/assets/0eeee393-9073-467d-9358-7ca6e0664501)
+
+📚 3.Find All Books
+
+~~~
+db.books.find()
+~~~
+
+![3_1](https://github.com/user-attachments/assets/b4b74034-94be-4f96-9321-27fb0bdee6c7)
+![3_2](https://github.com/user-attachments/assets/a215722d-ff1b-490a-bb88-601e71d99e9c)
+
