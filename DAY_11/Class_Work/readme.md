@@ -29,7 +29,10 @@ db.degrees.deleteOne({_id:ObjectId('6818c59a10694888a7d03766')})
 ~~~
 db.degrees.find().projection([{'name':1,'_id':1}])
 db.degrees.find().projection(['name','duration'])
+db.degrees.find({},{name:1,_id:0}).pretty()
 ~~~
 
 ![6_1](https://github.com/user-attachments/assets/a99e0b7d-4e25-4fc6-883b-3c337ef437a8)
 ![6_2](https://github.com/user-attachments/assets/71eaa70a-4ec0-438a-a4c4-f9f58564fb9f)
+![image](https://github.com/user-attachments/assets/7cb6c4af-5e8f-4248-b986-6d93cb1677b0)
+
