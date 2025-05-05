@@ -14,7 +14,7 @@ db.sampledata.drop()
 
 ![4](https://github.com/user-attachments/assets/e038a826-b9d5-4060-97b8-fbd30dea41a5)
 
-🗑️ Delete a Degree by ID
+🗑️ 3.Delete a Degree by ID
 
 ~~~
 db.degrees.deleteOne({_id:ObjectId('6818c59a10694888a7d03766')})
@@ -24,20 +24,21 @@ db.degrees.deleteOne({_id:ObjectId('6818c59a10694888a7d03766')})
 ![5_2](https://github.com/user-attachments/assets/716eb3b2-fcc7-4bd8-8e51-d543a6e791af)
 
 
-👀 Display Degree Name & Duration
+👀 4.Display Degree Name & Duration
 
 ~~~
 db.degrees.find().projection([{'name':1,'_id':1}])
 db.degrees.find().projection(['name','duration'])
-db.degrees.find({},{name:1,_id:0}).pretty()
 ~~~
 
 ![6_1](https://github.com/user-attachments/assets/a99e0b7d-4e25-4fc6-883b-3c337ef437a8)
 ![6_2](https://github.com/user-attachments/assets/71eaa70a-4ec0-438a-a4c4-f9f58564fb9f)
-![image](https://github.com/user-attachments/assets/7cb6c4af-5e8f-4248-b986-6d93cb1677b0)
 
 
-🗑️ Delete Degrees with Duration < 4
+
+
+🗑️ 5.Delete Degrees with Duration < 4
+
 
 ~~~
 db.degrees.deleteMany({duration:{$lt:4}})
@@ -46,4 +47,11 @@ db.degrees.deleteMany({duration:{$lt:4}})
 ![7_1](https://github.com/user-attachments/assets/805edc87-3bb3-4d09-8aa3-808e4592630e)
 ![7_2](https://github.com/user-attachments/assets/42ea57c1-0ae9-4fff-bc1d-33c0ea79a4b2)
 
+📋 6.Show All Remaining Degrees
+
+~~~
+db.degrees.find({},{name:1,_id:0}).pretty()
+~~~
+
+![image](https://github.com/user-attachments/assets/7cb6c4af-5e8f-4248-b986-6d93cb1677b0)
 
