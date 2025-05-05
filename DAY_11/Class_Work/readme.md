@@ -56,6 +56,13 @@ db.degrees.find({},{name:1,_id:0}).pretty()
 ![8](https://github.com/user-attachments/assets/f35493bb-cc1a-4e57-aa43-cba02ee3fbe5)
 
 
+✏️ 7.Update a Degree (by ID or any field)
+
+~~~
+db.degrees.updateOne({_id:ObjectId('6818c5f810694888a7d03768')},{$set:{name:"BIT",duration:3}})
+~~~
+
+![9](https://github.com/user-attachments/assets/2b8e5ead-180a-45fc-8cb3-47bf0eef481e)
 
 
 
