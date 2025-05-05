@@ -51,6 +51,14 @@ db.degrees.deleteMany({duration:{$lt:4}})
 
 ~~~
 db.degrees.find({},{name:1,_id:0}).pretty()
+db.degrees.find({},{name:1,duration:1,_id:0}).pretty()
+~~~
+
+![8](https://github.com/user-attachments/assets/301310e3-fbc9-4dcd-94cb-cfc21b63d60d)
+
+
+~~~
+db.degrees.find({},{name:1,_id:0}).pretty()
 ~~~
 
 
