@@ -65,4 +65,11 @@ db.degrees.updateOne({_id:ObjectId('6818c5f810694888a7d03768')},{$set:{name:"BIT
 ![9](https://github.com/user-attachments/assets/2b8e5ead-180a-45fc-8cb3-47bf0eef481e)
 
 
+📌 8.Find a Degree by _id
+
+~~~
+db.degrees.findOne({_id:ObjectId('6818c5f810694888a7d03768')})
+~~~
+
+![10](https://github.com/user-attachments/assets/ce5a613b-cf5b-4caa-88ff-d4303f255890)
 
