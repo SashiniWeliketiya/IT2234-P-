@@ -96,6 +96,13 @@ db.books.find()
 ![4_3](https://github.com/user-attachments/assets/05a0c95f-047a-4c41-a85d-edb59447498d)
 ![4_4](https://github.com/user-attachments/assets/c62e15b3-3e39-45c4-98ab-22ab6afa695e)
 
+📚 4. Find all books published after 1950
+
+~~~
+db.books.find({published_year: { $gt: 1950 }})
+~~~
+
+![5](https://github.com/user-attachments/assets/55f3cdd5-f66c-42c3-b9e5-4741446d836f)
 
 
 
