@@ -84,3 +84,18 @@ db.books.insertMany([
 )
 ~~~
 ![3](https://github.com/user-attachments/assets/d61de766-f344-44ff-b121-ef1228bc5b54)
+
+📚 3.Find All Documnets in 'books' collection
+
+~~~
+db.books.find()
+~~~
+
+![4_1](https://github.com/user-attachments/assets/29f9612a-aea2-48b9-9ff1-192e82292e4a)
+![4_2](https://github.com/user-attachments/assets/0be427f7-aea7-43ee-947d-17cbe2f3dfb6)
+![4_3](https://github.com/user-attachments/assets/05a0c95f-047a-4c41-a85d-edb59447498d)
+![4_4](https://github.com/user-attachments/assets/c62e15b3-3e39-45c4-98ab-22ab6afa695e)
+
+
+
+
