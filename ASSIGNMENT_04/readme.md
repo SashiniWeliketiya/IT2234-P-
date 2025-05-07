@@ -10,8 +10,10 @@
 
 //Insert data into libraries collection
 
-![3_3](https://github.com/user-attachments/assets/007fb7a8-19e9-41f6-8ca5-63bb1d9b66b2)
-![3_4](https://github.com/user-attachments/assets/a0938708-84c7-4bb5-98d2-7eaf51d8b2c1)
+![3_3](https://github.com/user-attachments/assets/f7c199ef-982c-43ee-832d-b227696e59d0)
+![3_4](https://github.com/user-attachments/assets/ddecd814-6a5c-412d-aeff-aeec833bc54e)
+
+
 
 
 //Insert data into books collection
