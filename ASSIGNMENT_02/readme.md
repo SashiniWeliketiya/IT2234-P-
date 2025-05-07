@@ -5,6 +5,8 @@
 ![2](https://github.com/user-attachments/assets/fb496e8d-f177-43e8-96f1-44d96de04681)
 
 
+
+📥 2.Insert Data
 ~~~
 db.books.insertMany([
     {
@@ -80,7 +82,5 @@ db.books.insertMany([
 
 ]
 )
-
-![3](https://github.com/user-attachments/assets/d61de766-f344-44ff-b121-ef1228bc5b54)
-
 ~~~
+![3](https://github.com/user-attachments/assets/d61de766-f344-44ff-b121-ef1228bc5b54)
