@@ -6,3 +6,30 @@
 
 
 📥 3.Insert Sample Data
+
+~~~
+db.books.insertMany([
+{
+    _id: ObjectId("60d5fc5ef295f5e2c4d5a8a3"),
+    title: "To Kill a Mockingbird",
+    library_id: ObjectId("60d5fbb2f295f5e2c4d5a8a1"),
+    author_ids: [ObjectId("60d5fd3ef295f5e2c4d5a8a4")]
+},
+{
+    _id: ObjectId("60d5fc5ef295f5e2c4d5a8a5"),
+    title: "1984",
+    library_id: ObjectId("60d5fbb2f295f5e2c4d5a8a2"),
+    author_ids: [ObjectId("60d5fd3ef295f5e2c4d5a8a6")]
+},
+{
+    _id: ObjectId("60d5fc5ef295f5e2c4d5a8a7"),
+    title: "Harry Potter and the Philosopher's Stone",
+    library_id: ObjectId("60d5fbb2f295f5e2c4d5a8a1"),
+    author_ids: [ObjectId("60d5fd3ef295f5e2c4d5a8a8"), ObjectId("60d5fd3ef295f5e2c4d5a8a9")]
+}
+])
+~~~
+
+![3_1](https://github.com/user-attachments/assets/db7f153c-2f3c-4b8a-b6ba-6efabffd3f8f)
+![3_2](https://github.com/user-attachments/assets/70890858-555f-43ae-88de-d8012141676a)
+
