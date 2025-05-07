@@ -69,7 +69,7 @@ db.books.find()
 📚 4. Find all books published after 1950
 
 ~~~
-db.books.find({ published_year: { $gt: 1950 } })
+db.books.find({ published_year: { $gt: 1950 }})
 ~~~
 
 ![4](https://github.com/user-attachments/assets/ddf215b8-0803-4806-a18e-86b8e8375c05)
