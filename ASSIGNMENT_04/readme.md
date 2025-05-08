@@ -128,9 +128,59 @@ db.books.aggregate([
 ![6_2](https://github.com/user-attachments/assets/78f3b409-26b4-4786-b0fc-63a81eb76ce2)
 
 
+📝 List of Authors & Their Books 📖
+   
+~~~
+db.authors.aggregate([
+  {
+    $lookup: {
+      from: "books",
+      localField: "_id",
+      foreignField: "author_ids",
+      as: "books"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      books: "$books.title"
+    }
+  }
+])
+
+~~~
+
+![7_1](https://github.com/user-attachments/assets/7dfd08a6-0f68-46bc-94bb-caaf1e397349)
+![7_2](https://github.com/user-attachments/assets/569f317d-bf00-41b9-8dc8-19dd584b4855)
 
 
+🔍 8.Find all books along with their authors' details
 
+~~~
+db.books.aggregate([
+  {
+    $lookup: {
+      from: "authors",
+      localField: "author_ids",
+      foreignField: "_id",
+      as: "authors"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      title: 1,
+      authors: {
+        name: 1,
+        birth_year: 1
+      }
+    }
+  }
+])
+~~~
 
+![8_1](https://github.com/user-attachments/assets/1d32cebe-0f25-4d31-b057-3d9f07863a9f)
+![8_2](https://github.com/user-attachments/assets/a561bb27-4ad4-4e68-8287-d3e6feeae434)
 
 
