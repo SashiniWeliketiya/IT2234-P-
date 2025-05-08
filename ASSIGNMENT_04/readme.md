@@ -53,6 +53,39 @@ db.books.insertMany(
 ![3_6](https://github.com/user-attachments/assets/31ba939a-57a9-424d-91a0-47078a4b0b03)
 
 
+📚 4.Find All Books in "Central Library"
+
+~~~
+db.books.find({ library_id: centralLibrary._id }, { title: 1, _id: 0 });
+~~~
+
+![4](https://github.com/user-attachments/assets/d769e644-9bf2-4b8c-862c-771adf623c85)
+
+🔍 5.List all libraries along with the number of books they have
+
+~~~
+db.libraries.aggregate([
+  {
+    $lookup: {
+      from: "books",
+      localField: "_id",
+      foreignField: "library_id",
+      as: "books"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      location: 1,
+      book_count: { $size: "$books" }
+    }
+  }
+])
+~~~
+
+![5](https://github.com/user-attachments/assets/28614970-8cc0-42b7-ac00-3c85e35c2dd3)
+
 
 
 
