@@ -247,7 +247,7 @@ db.libraries.aggregate([
 ![10_2](https://github.com/user-attachments/assets/947b18bf-a205-4642-b0eb-c6b17eed35a9)
 
 
-🧙‍♀️ 11. Find all authors who have written more than one book
+🧑‍🏫 11. Find all authors who have written more than one book
 
 ~~~
 db.books.aggregate([
@@ -280,6 +280,78 @@ db.books.aggregate([
 
 ![11](https://github.com/user-attachments/assets/55a2445f-8c2d-4d1c-a894-fe8005e0833d)
 ⚠️ Based on the current dataset, all authors have only written one book.
+
+
+📄 12. Retrieve all books along with their authors' names and the library they belong to.
+
+~~~
+db.books.aggregate([
+  {
+    $lookup: {
+      from: "authors",
+      localField: "author_ids",
+      foreignField: "_id",
+      as: "authors"
+    }
+  },
+  {
+    $lookup: {
+      from: "libraries",
+      localField: "library_id",
+      foreignField: "_id",
+      as: "library"
+    }
+  },
+  {
+    $unwind: "$library"
+  },
+  {
+    $project: {
+      _id: 0,
+      title: 1,
+      authors: "$authors.name",
+      library: "$library.name"
+    }
+  }
+])
+~~~
+
+![12_1](https://github.com/user-attachments/assets/0c48aa7c-6b67-45ed-bc19-8ef769048ae3)
+![12_2](https://github.com/user-attachments/assets/6f2590af-56bc-46ca-bb97-97466c7c7de4)
+
+
+📚❌ 13. List all authors who have not written any books
+
+
+~~~
+db.authors.aggregate([
+  {
+    $lookup: {
+      from: "books",
+      localField: "_id",
+      foreignField: "author_ids",
+      as: "books"
+    }
+  },
+  {
+    $match: {
+      books: { $eq: [] }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      birth_year: 1
+    }
+  }
+])
+~~~
+
+![13](https://github.com/user-attachments/assets/053e85bb-639d-47d3-b280-6e6b2cd0f3b3)
+
+⚠️ Based on the current data, all authors have written at least one book 
+
 
 
 
