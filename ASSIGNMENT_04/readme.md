@@ -128,7 +128,7 @@ db.books.aggregate([
 ![6_2](https://github.com/user-attachments/assets/78f3b409-26b4-4786-b0fc-63a81eb76ce2)
 
 
-📝 List of Authors & Their Books 📖
+📝7. List of Authors & Their Books 📖
    
 ~~~
 db.authors.aggregate([
