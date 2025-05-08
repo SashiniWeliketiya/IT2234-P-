@@ -121,7 +121,7 @@ db.books.aggregate([
       title: 1
     }
   }
-])![6_2](https://github.com/user-attachments/assets/2ffb8ce0-86cd-468c-bad4-baaded184cf3)
+])
 
 ~~~
 
