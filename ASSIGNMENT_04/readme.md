@@ -184,3 +184,102 @@ db.books.aggregate([
 ![8_2](https://github.com/user-attachments/assets/a561bb27-4ad4-4e68-8287-d3e6feeae434)
 
 
+🏛️📚 9.List all libraries and the number of books they have, including libraries with no books
+
+~~~
+db.libraries.aggregate([
+  {
+    $lookup: {
+      from: "books",
+      localField: "_id",
+      foreignField: "library_id",
+      as: "books"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      location: 1,
+      book_count: { $size: "$books" }
+    }
+  }
+])
+~~~
+
+![9](https://github.com/user-attachments/assets/6b7ce0e0-959b-4734-a1ea-56b48005549f)
+
+
+🧮 10. Calculate the average number of books per library
+
+
+~~~
+db.libraries.aggregate([
+  {
+    $lookup: {
+      from: "books",
+      localField: "_id",
+      foreignField: "library_id",
+      as: "books"
+    }
+  },
+  {
+    $project: {
+      book_count: { $size: "$books" }
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      average_books: { $avg: "$book_count" }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      average_books: { $round: ["$average_books", 2] } // Optional rounding to 2 decimal places
+    }
+  }
+])
+~~~
+
+![10_1](https://github.com/user-attachments/assets/4ac2ecdd-ba02-44ff-95d5-632c034bce9f)
+![10_2](https://github.com/user-attachments/assets/947b18bf-a205-4642-b0eb-c6b17eed35a9)
+
+
+🧙‍♀️ 11. Find all authors who have written more than one book
+
+~~~
+db.books.aggregate([
+  { $unwind: "$author_ids" },
+  {
+    $group: {
+      _id: "$author_ids",
+      book_count: { $sum: 1 }
+    }
+  },
+  { $match: { book_count: { $gt: 1 } } },
+  {
+    $lookup: {
+      from: "authors",
+      localField: "_id",
+      foreignField: "_id",
+      as: "author"
+    }
+  },
+  { $unwind: "$author" },
+  {
+    $project: {
+      _id: 0,
+      name: "$author.name",
+      book_count: 1
+    }
+  }
+])
+~~~
+
+![11](https://github.com/user-attachments/assets/55a2445f-8c2d-4d1c-a894-fe8005e0833d)
+⚠️ Based on the current dataset, all authors have only written one book.
+
+
+
