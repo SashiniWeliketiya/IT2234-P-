@@ -87,6 +87,45 @@ db.libraries.aggregate([
 ![5](https://github.com/user-attachments/assets/28614970-8cc0-42b7-ac00-3c85e35c2dd3)
 
 
+🔍 6. Find all books written by "J.K. Rowling"
+
+//1 way
+
+~~~
+const rowling = db.authors.findOne({ name: "J.K. Rowling" });
+db.books.find({ author_ids: rowling._id }, { title: 1, _id: 0 });
+~~~
+
+![6_1](https://github.com/user-attachments/assets/7b70bfdc-e1f5-47ae-a3b1-fa3f02b3f66c)
+
+//2 way
+
+~~~
+db.books.aggregate([
+  {
+    $lookup: {
+      from: "authors",
+      localField: "author_ids",
+      foreignField: "_id",
+      as: "authors"
+    }
+  },
+  {
+    $match: {
+      "authors.name": "J.K. Rowling"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      title: 1
+    }
+  }
+])![6_2](https://github.com/user-attachments/assets/2ffb8ce0-86cd-468c-bad4-baaded184cf3)
+
+~~~
+
+![6_2](https://github.com/user-attachments/assets/78f3b409-26b4-4786-b0fc-63a81eb76ce2)
 
 
 
