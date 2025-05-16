@@ -181,12 +181,18 @@ db.students.find({ gender: "Female" },{ _id: 0, name: 1, age: 1, gender: 1 })
 
 4️. 🎓 Find Young Students Enrolled After 2020
 
+
 ~~~
 db.students.find({age: { $lt: 22 },enrollmentYear: { $gt: 2020 }})
 ~~~
 
-![4_1](https://github.com/user-attachments/assets/6a7b4b6d-8114-4a46-a5b8-c77bc6d4e972)
-![4_2](https://github.com/user-attachments/assets/ea1df422-2afe-49c8-b155-f78863171cde)
+![4_1](https://github.com/user-attachments/assets/913d356f-ad4d-4515-9d47-686482c79a45)
+
+![4_2](https://github.com/user-attachments/assets/7cdff579-5b35-4cca-a1e3-c57018f9c9b0)
 
 
+
+5. 📝 Find All Grades for "Alice Johnson"
+
+   
 
