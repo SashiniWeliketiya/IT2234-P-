@@ -204,8 +204,23 @@ db.students.find({age: { $lt: 22 },enrollmentYear: { $gt: 2020 }})
 6. ➕ Count Students Who Took “Mathematics”
 
   ~~~
-   
+   db.grades.aggregate([
+  {
+    $match: { subject: "Mathematics" } 
+  }	,
+  {
+    $group: {
+      _id: "$studentId" 
+	  }
+  },
+  {
+    $count: "mathStudentsCount"
+  }
+])
   ~~~
+
+![image](https://github.com/user-attachments/assets/85cc02b7-eadb-4e1f-a997-b136098bb9fd)
+
 
 7. 🍁 Find Students with Grades in "Fall 2022"
 
