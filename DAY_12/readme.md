@@ -225,7 +225,12 @@ db.students.find({age: { $lt: 22 },enrollmentYear: { $gt: 2020 }})
 7. 🍁 Find Students with Grades in "Fall 2022"
 
    ~~~
- 
+    db.grades.find({ term: "Fall 2022" })
    ~~~
+
+   ![7_1](https://github.com/user-attachments/assets/74dc57e5-4097-403d-ae24-edf4fce026e8)
+
+   ![7_2](https://github.com/user-attachments/assets/07ab0808-7ae5-448f-b3e8-4b1f4f456c97)
+
 
   
