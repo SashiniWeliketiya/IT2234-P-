@@ -160,12 +160,12 @@ db.grades.insertMany(
 
 📊 2.Table View
 
-grades-->
+students-->
 
 ![2_!](https://github.com/user-attachments/assets/b1561e98-5b13-4e67-8537-921fa7ad0cfe)
 
 
-students-->
+grades-->
 
 ![2_2](https://github.com/user-attachments/assets/402d610c-1f1f-456e-bd7c-cbf9430607a2)
 
