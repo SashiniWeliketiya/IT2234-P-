@@ -9,3 +9,5 @@
 | Codes | Outputs|
 |-------|--------|
 |['index.js'](./Codes/index.js)|![01.png](./Outputs/01.png)|
+|['Course.js'](./Codes/Course.js)|![05.png](./Outputs/05.png)|
+|['courseRoute.js'](./Codes/courseRoute.js)|![06.png](./Outputs/06.png)|
