@@ -6,3 +6,6 @@
 ![1_4](https://github.com/user-attachments/assets/69ba6a15-c19a-4ff3-8d85-43180e362cfd)
 
 
+| Codes | Outputs|
+|-------|--------|
+|['index.js'](./Codes/index.js)|![01.png](./Outputs/01.png)|
