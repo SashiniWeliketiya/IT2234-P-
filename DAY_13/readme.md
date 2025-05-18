@@ -8,6 +8,6 @@
 
 | Codes | Outputs|
 |-------|--------|
-|['index.js'](./Codes/index.js)|![01.png](./Outputs/01.png)|
+|['index.js'](./Codes/index.js)|![01.png](./Outputs/01.png)![02.png](./Outputs/02.png)![03.png](./Outputs/03.png)![04.png](./Outputs/04.png)|
 |['Course.js'](./Codes/Course.js)|![05.png](./Outputs/05.png)|
 |['courseRoute.js'](./Codes/courseRoute.js)|![06.png](./Outputs/06.png)|
