@@ -34,5 +34,9 @@ Body (raw > JSON):
 
 ![deleted](https://github.com/user-attachments/assets/b103d3d7-8c37-4746-baa3-c81814784407)
 
+| Codes | Outputs|
+|-------|--------|
+|['index.js'](./Codes/index.js)|![index.png](./Outputs/index.png)|
+|['Course.js'](./Codes/Course.js)|![course.png](./Outputs/course.png)|
 
 
