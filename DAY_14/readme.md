@@ -4,6 +4,24 @@ Method: POST
 
 Body (raw > JSON):
 
+~~~
+router.post('/',async(req,res)=>{
+    try{
+        const {code,name,credits,description} = req.body
+        if(!code || !name || !credits){
+              res.status(400).send("Please provide the required fields!")
+        }else{
+            const results = await Course.create({code,name,credits,description})
+            res.status(200).json(results)
+        }
+    }catch (error){
+        console.error(error);
+        res.status(500).send("Sever error !")
+    }
+    
+})
+~~~
+
  ![insert](https://github.com/user-attachments/assets/5718ad89-2c8f-485d-b807-2c780940248f)
 
  ![inserted](https://github.com/user-attachments/assets/3fbffc71-6832-453c-96bb-6ee787fcfe63)
