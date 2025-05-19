@@ -100,6 +100,7 @@ router.delete('/:id',async(req,res)=>{
 | Codes | Outputs|
 |-------|--------|
 |['index.js'](./Codes/index.js)|![index.png](./Outputs/index.png)|
-|['Course.js'](./Codes/Course.js)|![course.png](./Outputs/course.png)|
+|['Course.js'](./Codes/Course.js)|![course.png](./Outputs/course.png)![01.png](./Outputs/01.png)|
+|['degree.js'](./Codes/degree.js)|![02.png](./Outputs/02.png)![03.png](./Outputs/03.png)|
 
 
