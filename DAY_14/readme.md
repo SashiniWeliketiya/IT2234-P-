@@ -24,3 +24,15 @@ Body (raw > JSON):
 ![updated](https://github.com/user-attachments/assets/6b234168-35c9-4209-9256-b467c1710fd0)
 
 
+##✅ 3. DELETE
+
+Method: DELETE
+
+Body (raw > JSON):
+
+![delete](https://github.com/user-attachments/assets/998792d8-2cd3-4cd9-8469-89120eceaf8d)
+
+![deleted](https://github.com/user-attachments/assets/b103d3d7-8c37-4746-baa3-c81814784407)
+
+
+
