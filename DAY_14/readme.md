@@ -37,6 +37,29 @@ Method: PUT
 
 Body (raw > JSON):
 
+~~~
+router.put('/:id',async(req,res)=>{
+    try{
+        const id = req.params.id
+        if(!mongoose.Types.ObjectId.isValid(id)){
+            return res.status(400).send("Invalid ID !")
+        }
+        const ucourse =  await Course.findById(id)
+        const {code,name,credits,description} = req.body
+        if(!code || !name || !credits){
+              res.status(400).send("Please provide the required fields!")
+        }else{
+            const results = await ucourse.updateOne({code,name,credits,description})
+            res.status(200).json(results)
+        }
+    }catch (error){
+        console.error(error);
+        res.status(500).send("Sever error !")
+    }
+    
+})
+~~~
+
 ![update](https://github.com/user-attachments/assets/9492f57b-8dbd-41bb-a0eb-4f427df504f5)
 
 ![updated](https://github.com/user-attachments/assets/6b234168-35c9-4209-9256-b467c1710fd0)
@@ -47,6 +70,28 @@ Body (raw > JSON):
 Method: DELETE
 
 Body (raw > JSON):
+
+~~~
+router.delete('/:id',async(req,res)=>{
+    try{
+        const id = req.params.id
+        if(!mongoose.Types.ObjectId.isValid(id)){
+            return res.status(400).send("Invalid ID !")
+        }
+        const dcourse =  await Course.findById(id)
+        const {code,name,credits,description} = req.body
+        const results = await dcourse.deleteOne(dcourse).catch(
+            (error)=>{ return res.status(500).json(error)}
+        )
+        res.status(200).json(results)
+        
+    }catch (error){
+        console.error(error);
+        res.status(500).send("Sever error !")
+    }
+    
+})
+~~~
 
 ![delete](https://github.com/user-attachments/assets/998792d8-2cd3-4cd9-8469-89120eceaf8d)
 
