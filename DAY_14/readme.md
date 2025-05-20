@@ -2,8 +2,9 @@
 
 Method: POST
 
-Body (raw > JSON):
+Body (raw > JSON): Postman
 
+🧑🏻‍💻in visual studio code:
 ~~~
 router.post('/',async(req,res)=>{
     try{
@@ -35,8 +36,9 @@ router.post('/',async(req,res)=>{
 
 Method: PUT
 
-Body (raw > JSON):
+Body (raw > JSON):Postman
 
+🧑🏻‍💻in visual studio code:
 ~~~
 router.put('/:id',async(req,res)=>{
     try{
@@ -69,8 +71,9 @@ router.put('/:id',async(req,res)=>{
 
 Method: DELETE
 
-Body (raw > JSON):
+Body (raw > JSON):Postman
 
+🧑🏻‍💻in visual studio code:
 ~~~
 router.delete('/:id',async(req,res)=>{
     try{
