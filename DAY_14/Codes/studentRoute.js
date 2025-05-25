@@ -96,21 +96,7 @@ router.delete('/:id',async(req,res)=>{
     }
 })
 
-router.get('/course',async(req,res)=>{
-    console.log('check')
-    try{
-        
-        const results = await student.find().populate("degreeId").populate("enroled_courses")
-        if(results) {
-            res.status(200).json(results)
-        }else{
-            res.status(404).send("Sorry, no data found!")
-        }
-    }catch(error){
-        console.error(error);
-        res.status(500).send("Server Error!")
-    }
-})
+
 
 module.exports=router
 
