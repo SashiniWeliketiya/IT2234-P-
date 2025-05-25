@@ -1,19 +1,114 @@
-const mongoose = require('mongoose')
-const degreeSchema= new mongoose.Schema({
-    _id:{type:String,require:true},
-    name:{type:String,require:true},
-    credits:{type:Number,require:true},
-    duration:{type:Number,require:true},
-    faculty:{type:String}
+const express = require('express')
+const router = express.Router()
+const degree = require('../models/degree')
+const { default: mongoose } = require('mongoose')
+
+router.get('/',async(req,res)=>{
+    try{
+        const results = await degree.find()
+        if(results) {
+            res.status(200).json(results)
+        }else{
+            res.status(404).send("Sorry, no data found!")
+        }
+    }catch(error){
+        console.error(error);
+        res.status(500).send("Server Error!")
+    }
 })
 
-const degree=mongoose.model('degrees',degreeSchema)
-const BICT = new degree({
-    _id:'FAS2000ICT',
-    name:'Bachelor of Information Technology',
-    credits:120,
-    duration:4,
-    faculty:'Faculty of Applied Science'
+router.get('/:id',async(req,res)=>{
+    try{
+        const id = req.params.id
+        const results = await degree.findById(id)
+        if(results) {
+            res.status(200).json(results)
+        }else{
+            res.status(404).send("Sorry, no data found!")
+        }
+    }catch(error){
+        console.error(error);
+        res.status(500).send("Server Error!")
+    }
 })
-BICT.save()
-module.exports=degree
+
+router.get('/code/:cid',async(req,res)=>{
+    try{
+        const cid = req.params.cid
+        const results = await degree.find({code:cid})
+        const count = results.length
+        console.log(count)
+        if(results) {
+           if(count>0){
+                res.status(200).json(results)
+           }else{
+            res.status(404).send("Sorry, no data found!")
+           }
+        }else{
+            res.status(404).send("Sorry, no data found!")
+        }
+    }catch(error){
+        console.error(error);
+        res.status(500).send("Server Error!")
+    }
+})
+
+//insert
+
+router.post('/',async(req,res)=>{
+    try{
+        const {_id,name,department,numberofyears} = req.body
+        if(!_id || !name || !department || !numberofyears) {
+            res.status(400).send("Please provide data to the required fileds!")
+        }else{
+            const results = await degree.create({_id,name,department,numberofyears})
+            res.status(200).json(results)
+        }
+    }catch(error){
+        console.error(error);
+        res.status(500).send("Server Error!")
+    }
+})
+
+//update
+
+router.put('/:id',async(req,res)=>{
+    try{
+        const id = req.params.id
+        if(!mongoose.Types.ObjectId.isValid(id)){
+            return res.status(400).send("Invalid ID!")
+        }
+        const udegree = await degree.findById(id)
+        const {_id,name,department,numberofyears} = req.body
+        if(!_id || !name || !department || !numberofyears) {
+            res.status(400).send("Please provide data to the required fileds!")
+        }else{
+            const results = await udegree.updateOne({_id,name,department,numberofyears})
+            res.status(200).json(results)
+        }
+    }catch(error){
+        console.error(error);
+        res.status(500).send("Server Error!")
+    }
+})
+
+//delete
+
+router.delete('/:id',async(req,res)=>{
+    try{
+        const id = req.params.id
+        if(!mongoose.Types.ObjectId.isValid(id)){
+            return res.status(400).send("Invalid ID!")
+        }
+        const ddegree = await degree.findById(id)
+        const results = await ddegree.deleteOne(ddegree).catch((error)=>{
+            return res.status(500).json(error)}
+        )
+        res.status(200).json(results)
+    }catch(error){
+        console.error(error);
+        res.status(500).send("Server Error!")
+    }
+})
+
+module.exports=router
